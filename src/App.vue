@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <top-bar>
+    <template v-slot:avatar><avatar></avatar></template>
+    <template v-slot:nav><nav-1></nav-1></template>
+  </top-bar>
+  <router-view></router-view>
+  <text-jumps></text-jumps>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import topBar from "@/components/Top-bar";
+import Avatar from "@/components/avatar";
+import Nav1 from "@/components/nav-1";
+import TextJumps from "@/components/text-jumps";
+
+const imgList = [];
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TextJumps,
+    Avatar,
+    topBar,
+    Nav1
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
 </style>
