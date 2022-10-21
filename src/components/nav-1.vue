@@ -85,11 +85,7 @@ a{
 .PC:hover .PC-content {
   display: block;
 }/*鼠标显示下拉菜单*/
-.router-link-active:hover{
-  color: #69c9c9;
-  background-color: rgba(0,0,0,0.1);
-}
-.dropbtn:hover{
+.router-link-active:hover,.dropbtn:hover{
   color: #69c9c9;
   background-color: rgba(0,0,0,0.1);
 }
