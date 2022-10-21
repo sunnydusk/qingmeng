@@ -2,19 +2,19 @@
   <nav>
   <div class="NET">
     <ul>
-      <li><router-link to="/" class="">首页</router-link></li>
-      <li><router-link to="/article" class="">文章</router-link></li>
-      <li><router-link to="/message" class="">留言</router-link></li>
-      <li><router-link to="/author" class="">关于作者</router-link></li>
+      <li><router-link to="/" class="router-link-active">首页</router-link></li>
+      <li><router-link to="/article" class="router-link-active">文章</router-link></li>
+      <li><router-link to="/message" class="router-link-active">留言</router-link></li>
+      <li><router-link to="/author" class="router-link-active">关于作者</router-link></li>
     </ul>
   </div>
   <div class="PC">
     <button class="dropbtn">菜单</button>
     <div class="PC-content">
-      <router-link to="/">首页</router-link>
-      <router-link to="/article">文章</router-link>
-      <router-link to="/message">留言</router-link>
-      <router-link to="/author">关于作者</router-link>
+      <router-link to="/" class="router-link-active">首页</router-link>
+      <router-link to="/article" class="router-link-active">文章</router-link>
+      <router-link to="/message" class="router-link-active">留言</router-link>
+      <router-link to="/author" class="router-link-active">关于作者</router-link>
     </div>
   </div>
   </nav>
@@ -71,7 +71,7 @@ a{
   display: none;
   position: absolute;
   background:rgba(143, 143, 143, 0.4);
-  min-width: 160px;
+  min-width: 60px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }/*默认隐藏*/
 .PC-content a {
@@ -79,12 +79,20 @@ a{
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+
 }
 /*下拉菜单链接*/
 .PC:hover .PC-content {
   display: block;
 }/*鼠标显示下拉菜单*/
-
+.router-link-active:hover{
+  color: #69c9c9;
+  background-color: rgba(0,0,0,0.1);
+}
+.dropbtn:hover{
+  color: #69c9c9;
+  background-color: rgba(0,0,0,0.1);
+}
 @media screen and (min-width: 906px) {
   article {
     display: grid;
