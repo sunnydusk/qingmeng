@@ -4,7 +4,6 @@
     <template v-slot:nav><nav-1></nav-1></template>
   </top-bar>
   <router-view></router-view>
-  <text-jumps></text-jumps>
 
 </template>
 

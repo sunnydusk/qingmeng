@@ -1,4 +1,6 @@
 <template>
+
+  <text-jumps></text-jumps>
   <v-img :src="background" width="100%" height="100vh"></v-img>
   <div class="intreduce">
     <div class="introduce_item">
@@ -26,9 +28,10 @@
 
 <script>
 import VImg from "@/components/v-img";
+import TextJumps from "@/components/text-jumps";
 export default {
   name: "Index",
-  components: {VImg},
+  components: {TextJumps, VImg},
   props:{
     background:{
       type:String,
