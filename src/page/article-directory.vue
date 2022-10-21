@@ -26,7 +26,7 @@ export default {
   width: 75%;
   margin: 0 auto;
   box-shadow: darkgray 0 0 30px 5px;
-  border-radius: 25px;
+  border-radius: 24px;
 }
 a{
   text-decoration: none;
