@@ -1,6 +1,6 @@
 <template>
   <audio ref="music" id="music" autoplay="autoplay" loop="loop" src="/多谢泪的告白.mp3"></audio>
-  <img @click="click" ref="avatar" class="avatar_size" :class="{start:!flag}" src="/image/avater.jpg" alt="">
+  <img @click="click" ref="avatar" class="avatar_size" :class="{start:!flag}" src="/image/avatar.jpg" alt="">
 </template>
 
 <script>

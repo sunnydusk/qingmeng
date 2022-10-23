@@ -1,7 +1,6 @@
 <template>
   <div class="memo">
     <template v-for="item in list">
-
     <div class="router-link-active">
       <view class="table" @click="item.show=!item.show">
         <text>{{ item.name}}</text>
@@ -34,7 +33,7 @@ export default {
         {
           name:"JavaScript",
           show:false,
-          child:[{name:"123",link:"/"}],
+          child:[{name:"V-show/v-for",link:"/"}],
         },
         {
           name:"PHP",
