@@ -29,7 +29,7 @@ export default {
       list: [{
         name: "个人爱好",
         show: false,
-        child:  [{name: "学习", show1: false, text: "程序设计语言：学习中"},
+        child:  [{name: "学习", show1: false, text: "vue：学习中"},
                 {name: "运动", show1: false, text: "乒乓球，羽毛球"},
                 {name: "游戏", show1: false, text: "摆烂型旅行者，不太合格的召唤师，躺过聚窟洲各地"}],
       }
