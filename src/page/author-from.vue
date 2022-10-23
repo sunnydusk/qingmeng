@@ -31,7 +31,7 @@ export default {
         show: false,
         child:  [{name: "学习", show1: false, text: "vue：学习中"},
                 {name: "运动", show1: false, text: "乒乓球，羽毛球"},
-                {name: "游戏", show1: false, text: "摆烂型旅行者，也曾在聚窟洲各地躺过，"}],
+                {name: "游戏", show1: false, text: "摆烂型旅行者"}],
       }
       ]
     }
@@ -75,6 +75,10 @@ export default {
     user-select: none;
     font-family: 黑体;
   }
+  .table:hover{
+    border: 2px #6b6b6b solid;
+    color: #00c4c4;
+  }
   li{
     font-size: 25px;
     list-style: none;
@@ -83,7 +87,7 @@ export default {
   .page{
     position: absolute;
     margin-top: 220px;
-    margin-left: 15%;
+    margin-left: 12%;
     user-select: none;
     font-family: 黑体;
     font-size: 30px;
