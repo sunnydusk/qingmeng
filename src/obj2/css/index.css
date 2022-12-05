@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#game{
+    width: 520px;
+    height: 680px;
+    margin: auto;
+    overflow: hidden;
+}
+#gameStart{
+    width: 100%;
+    height: 100%;
+    background-color: #adadad;
+    position: relative;
+    /*display: none;*/
+}
+#gameStart p{
+    width: 280px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    font-size: 38px;
+    font-weight: bolder;
+    left: 130px;
+    top: 80px;
+    user-select: none;
+}
+#gameStart span {
+    width: 160px;
+    height: 40px;
+    display: block;
+    background-color: #adadad;
+    border: 4px  solid #666;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 32px;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bolder;
+    left: 180px;
+    bottom: 200px;
+    cursor: pointer;
+    //经过鼠标变成手指
+}
+#gameStart span:hover{
+    color: #fff;
+}
+#gameEnter{
+    width: 100%;
+    height: 100%;
+    background-color: #adadad;
+    position: relative;
+    display: none;
+}
+#myPlane img{
+    width: 72px;
+    height: 72px;
+}
+#myPlane{
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left: 224px;
+    bottom: 0;
+    cursor: pointer;
+}
+#bullets, #enemys{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.wd_zd{
+    width: 10px;
+    height: 25px;
+    position: absolute;
+}
+.dj{
+    position: absolute;
+}
+#scores{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: "方正姚体";
+    padding:0 20px;
+}
+#scores p{
+    text-align: right ;
+    width: 80%;
+}
