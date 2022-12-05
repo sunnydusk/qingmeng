@@ -39,6 +39,11 @@ export default {
           name:"PHP",
           show:false,
           child:[{name:"123",link:"/"}],
+        },
+        {
+          name:"项目实践",
+          show:false,
+          child:[{name:"123",link:"../obj2/html/index.html"}],
         }
       ]
     }
